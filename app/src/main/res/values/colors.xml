@@ -3,6 +3,8 @@
     <color name="colorAccent">#FF018786</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorOnPrimary">#FFFFFF</color>
-    <color name="colorBlack">#000000</color> <!-- Preto -->
-    <color name="colorWhite">#FFFFFF</color> <!-- Branco -->
+
+    <!-- Definindo as cores faltantes -->
+    <color name="colorBlack">#000000</color> <!-- Cor preta -->
+    <color name="colorWhite">#FFFFFF</color> <!-- Cor branca -->
 </resources>

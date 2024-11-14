@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -25,16 +26,10 @@ class LoginActivity : AppCompatActivity() {
         // Configurando o botão de login
         binding.btnLogin.setOnClickListener {
             // Recuperando os valores de e-mail e senha das views
-            val email = binding.email.text.toString().trim()  // Aqui acessamos o TextInputEditText do e-mail
-            val password = binding.password.text.toString().trim()  // Aqui acessamos o TextInputEditText da senha
+            val email = binding.email.text.toString().trim()  // Acessa o TextInputEditText do e-mail
+            val password = binding.password.text.toString().trim()  // Acessa o TextInputEditText da senha
 
-            // Validando os campos de entrada
-            if (email.isEmpty() || password.isEmpty()) {
-                Toast.makeText(this, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
-            }
-
-            // Chamando o método para realizar o login com Firebase Authentication
+            // Realiza o login, sem validação ou verificação
             loginUser(email, password)
         }
     }
@@ -43,17 +38,16 @@ class LoginActivity : AppCompatActivity() {
         // Usando o Firebase Authentication para autenticar o usuário
         auth.signInWithEmailAndPassword(email, password)
             .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    // Login bem-sucedido
-                    val user = auth.currentUser
-                    Toast.makeText(this, "Bem-vindo, ${user?.email}!", Toast.LENGTH_SHORT).show()
+                // Redireciona para o MenuActivity independentemente do sucesso ou falha no login
+                val user = auth.currentUser
+                Toast.makeText(this, "Bem-vindo!", Toast.LENGTH_SHORT).show()
 
-                    // Após o login bem-sucedido, você pode permanecer na tela de login
-                    // Não há redirecionamento para outra activity aqui
-                } else {
-                    // Caso falhe o login
-                    Toast.makeText(this, "Falha no login. Verifique suas credenciais.", Toast.LENGTH_SHORT).show()
-                }
+                // Redireciona para o MenuActivity
+                val intent = Intent(this, MenuActivity::class.java)
+                startActivity(intent)
+
+                // Finaliza a LoginActivity para que o usuário não possa voltar para ela
+                finish()
             }
     }
 }

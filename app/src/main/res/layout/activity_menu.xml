@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MenuActivity">
+
+    <TextView
+        android:id="@+id/menuTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bem-vindo ao Monitor Energy"
+        android:textSize="40sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:gravity="center"
+        android:shadowColor="#888888"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4" />
+
+
+    <Button
+        android:id="@+id/btnNotificacoes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Notificações"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableLeft="@android:drawable/ic_dialog_info"
+        android:drawablePadding="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/menuTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnFaturas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Faturas"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableLeft="@android:drawable/ic_menu_info_details"
+        android:drawablePadding="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/btnNotificacoes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnPagamentos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Pagamentos"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableLeft="@android:drawable/ic_menu_add"
+        android:drawablePadding="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/btnFaturas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnRelatorios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Relatórios de Consumo"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableLeft="@android:drawable/ic_menu_report_image"
+        android:drawablePadding="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/btnPagamentos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Sair do App"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="@color/colorAccent"
+        android:drawableLeft="@android:drawable/ic_lock_power_off"
+        android:drawablePadding="16dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/btnRelatorios"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="© 2024 Monitor Energy Todos os direitos reservados."
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

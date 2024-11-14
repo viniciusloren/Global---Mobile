@@ -28,6 +28,10 @@
             android:name=".MainActivity"
             android:exported="true" />
 
+        <!-- Adicionando a MenuActivity -->
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true" />
     </application>
 
 </manifest>
