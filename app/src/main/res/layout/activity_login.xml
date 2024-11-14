@@ -3,62 +3,83 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="32dp"
-    android:gravity="center"
-    android:background="@drawable/background_energy"
+    android:gravity="top"
+    android:background="@android:color/white"
     android:scrollbars="none">
 
-    <!-- Campo de E-mail -->
+    <TextView
+        android:id="@+id/loginTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Realize seu Login"
+        android:textSize="32sp"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/email_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:hint="E-mail">
+        android:layout_marginBottom="16dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:background="@android:color/white"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:background="@color/colorAccent"
             android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:layout_marginTop="8dp"/>
+            android:paddingRight="16dp"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Campo de Senha -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:textColor="@color/colorBlack"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/password_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:hint="Senha">
+        android:layout_marginBottom="32dp">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:background="@android:color/white"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:background="@color/colorAccent"
             android:paddingLeft="16dp"
-            android:paddingRight="16dp"
-            android:layout_marginTop="8dp"/>
+            android:paddingRight="16dp"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Botão de Login -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="Entrar"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/colorBlack"
         android:textSize="18sp"
+        android:textStyle="bold"
         android:backgroundTint="@color/colorAccent"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="32dp"/>
-
 </LinearLayout>

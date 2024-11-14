@@ -1,6 +1,8 @@
 <resources>
-    <color name="colorPrimary">#FF6200EE</color> <!-- Cor roxa -->
-    <color name="colorAccent">#FF018786</color> <!-- Cor ciano vibrante para o botão -->
+    <color name="colorPrimary">#FF6200EE</color>
+    <color name="colorAccent">#FF018786</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorBlack">#000000</color> <!-- Preto -->
+    <color name="colorWhite">#FFFFFF</color> <!-- Branco -->
 </resources>
