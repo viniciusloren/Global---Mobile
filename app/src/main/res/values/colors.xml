@@ -1,10 +1,18 @@
 <resources>
+    <!-- Cores principais -->
     <color name="colorPrimary">#FF6200EE</color>
     <color name="colorAccent">#FF018786</color>
     <color name="colorPrimaryDark">#3700B3</color>
     <color name="colorOnPrimary">#FFFFFF</color>
 
-    <!-- Definindo as cores faltantes -->
+    <!-- Cores gerais -->
     <color name="colorBlack">#000000</color> <!-- Cor preta -->
     <color name="colorWhite">#FFFFFF</color> <!-- Cor branca -->
+
+    <!-- Cores específicas para as notificações -->
+    <color name="colorLightGreen">#A5D6A7</color>  <!-- Cor verde clara -->
+    <color name="colorLightRed">#FFCDD2</color>    <!-- Cor vermelha clara -->
+    <color name="colorLightBlue">#BBDEFB</color>   <!-- Cor azul clara -->
+    <color name="colorLightOrange">#FFCC80</color> <!-- Cor laranja clara -->
+    <color name="colorLightYellow">#FFF9C4</color> <!-- Cor amarela clara -->
 </resources>

@@ -11,12 +11,12 @@
         android:id="@+id/loginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Realize seu Login"
+        android:text="LOGIN"
         android:textSize="32sp"
         android:textColor="@color/colorBlack"
         android:textStyle="bold"
         android:gravity="center"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="32dp"/>
 
     <TextView
