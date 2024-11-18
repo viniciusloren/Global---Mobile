@@ -36,6 +36,10 @@
             android:name=".NotificationsActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".InvoicesActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>

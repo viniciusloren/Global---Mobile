@@ -22,7 +22,7 @@ class MenuActivity : AppCompatActivity() {
         btnFaturas.setOnClickListener { navigateToBills() }
         btnPagamentos.setOnClickListener { navigateToPayments() }
         btnRelatorios.setOnClickListener { navigateToReports() }
-        btnSair.setOnClickListener { finish() }  // Sair do app
+        btnSair.setOnClickListener { finish() }
     }
 
     private fun navigateToNotifications() {
@@ -31,6 +31,8 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun navigateToBills() {
+        val intent = Intent(this, InvoicesActivity::class.java)
+        startActivity(intent)
     }
 
     private fun navigateToPayments() {

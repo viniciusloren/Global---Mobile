@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".InvoicesActivity">
+
+    <TextView
+        android:id="@+id/invoicesTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faturas"
+        android:textSize="32sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold|italic"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/invoiceCard1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/invoicesTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_dialog_alert"
+                    android:contentDescription="Ícone de alerta"
+                    android:layout_marginEnd="8dp"
+                    android:tint="#FF0000" />
+
+                <TextView
+                    android:id="@+id/invoiceTitle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fatura em Atraso"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/invoicePrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço: R$ 350,00"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/invoiceDate1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data: 15/10/2024"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/invoiceCard2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/invoiceCard1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_dialog_alert"
+                    android:contentDescription="Ícone de alerta"
+                    android:layout_marginEnd="8dp"
+                    android:tint="#FF0000" />
+
+                <TextView
+                    android:id="@+id/invoiceTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fatura em Atraso"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/invoicePrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço: R$ 120,00"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/invoiceDate2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data: 20/09/2024"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/invoiceCard3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/invoiceCard2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_dialog_alert"
+                    android:contentDescription="Ícone de alerta"
+                    android:layout_marginEnd="8dp"
+                    android:tint="#FF0000" />
+
+                <TextView
+                    android:id="@+id/invoiceTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fatura em Atraso"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/invoicePrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço: R$ 980,00"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/invoiceDate3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data: 05/10/2024"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/invoiceCard4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp"
+        app:layout_constraintTop_toBottomOf="@id/invoiceCard3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start|center_vertical">
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@android:drawable/ic_menu_info_details"
+                    android:contentDescription="Ícone de fatura aberta"
+                    android:layout_marginEnd="8dp"
+                    android:tint="#FFEB3B" />
+
+                <TextView
+                    android:id="@+id/invoiceTitle4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fatura em Aberto"
+                    android:textSize="20sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/invoicePrice4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Preço: R$ 450,00"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"/>
+
+            <TextView
+                android:id="@+id/invoiceDate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data: 25/11/2024"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@color/colorAccent"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/invoiceCard4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
