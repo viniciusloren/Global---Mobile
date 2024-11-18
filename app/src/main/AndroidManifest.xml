@@ -44,9 +44,12 @@
             android:name=".PaymentsActivity"
             android:exported="true" />
 
-        <!-- Adicionando a nova activity de pagamento via PIX -->
         <activity
             android:name=".PixPaymentActivity"
+            android:exported="true" />
+
+        <activity
+            android:name=".CreditCardPaymentActivity"
             android:exported="true" />
 
     </application>

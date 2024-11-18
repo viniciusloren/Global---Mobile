@@ -18,26 +18,27 @@ class PaymentsActivity : AppCompatActivity() {
         val btnBack: Button = findViewById(R.id.backButton)
         val amountInput: EditText = findViewById(R.id.paymentValue)
 
+        // Ação para o botão PIX
         btnPix.setOnClickListener {
             val intent = Intent(this, PixPaymentActivity::class.java)
             startActivity(intent)
         }
 
-
+        // Ação para o botão Cartão de Crédito
         btnCreditCard.setOnClickListener {
-            processPayment(amountInput.text.toString(), "Cartão de Crédito")
+            val amount = amountInput.text.toString()
+
+            // Redireciona diretamente para a tela de pagamento com cartão
+            val intent = Intent(this, CreditCardPaymentActivity::class.java).apply {
+                // Passando o valor para a tela de pagamento com cartão
+                putExtra("amount", amount)
+            }
+            startActivity(intent)
         }
 
+        // Ação para o botão Voltar
         btnBack.setOnClickListener {
-            finish()
-        }
-    }
-
-    private fun processPayment(amount: String, paymentMethod: String) {
-        if (amount.isNotEmpty()) {
-            Toast.makeText(this, "Pagamento de R$ $amount via $paymentMethod realizado com sucesso!", Toast.LENGTH_LONG).show()
-        } else {
-            Toast.makeText(this, "Por favor, insira um valor para o pagamento.", Toast.LENGTH_SHORT).show()
+            finish() // Finaliza a atividade e retorna à tela anterior
         }
     }
 }
