@@ -40,6 +40,10 @@
             android:name=".InvoicesActivity"
             android:exported="true" />
 
+        <activity
+            android:name=".PaymentsActivity"
+            android:exported="true" />
+
     </application>
 
 </manifest>

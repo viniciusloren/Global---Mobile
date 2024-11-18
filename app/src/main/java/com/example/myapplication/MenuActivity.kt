@@ -36,6 +36,8 @@ class MenuActivity : AppCompatActivity() {
     }
 
     private fun navigateToPayments() {
+        val intent = Intent(this, PaymentsActivity::class.java)
+        startActivity(intent)
     }
 
     private fun navigateToReports() {
