@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -18,8 +19,10 @@ class PaymentsActivity : AppCompatActivity() {
         val amountInput: EditText = findViewById(R.id.paymentValue)
 
         btnPix.setOnClickListener {
-            processPayment(amountInput.text.toString(), "PIX")
+            val intent = Intent(this, PixPaymentActivity::class.java)
+            startActivity(intent)
         }
+
 
         btnCreditCard.setOnClickListener {
             processPayment(amountInput.text.toString(), "Cartão de Crédito")
