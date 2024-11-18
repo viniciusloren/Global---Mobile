@@ -16,12 +16,18 @@ class MenuActivity : AppCompatActivity() {
         val btnPagamentos: Button = findViewById(R.id.btnPagamentos)
         val btnRelatorios: Button = findViewById(R.id.btnRelatorios)
         val btnSair: Button = findViewById(R.id.btnSair)
+        val btnExitApp: Button = findViewById(R.id.btnSair)
 
         btnNotificacoes.setOnClickListener { navigateToNotifications() }
         btnFaturas.setOnClickListener { navigateToBills() }
         btnPagamentos.setOnClickListener { navigateToPayments() }
         btnRelatorios.setOnClickListener { navigateToReports() }
         btnSair.setOnClickListener { finish() }
+
+        btnExitApp.setOnClickListener {
+            val intent = Intent(this, ExitActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     private fun navigateToNotifications() {
