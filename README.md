@@ -69,6 +69,7 @@ Este projeto é um aplicativo mobile desenvolvido no Android Studio com o objeti
 
 ## Links do Projeto
 - [Vídeo de Apresentação](#) *(https://www.youtube.com/watch?v=odzOOyjkGhM)*
+  
 - [Protótipo no Figma](#) *(https://www.figma.com/proto/hzoaRTkMWkRaiBbYnHoYRk/Untitled?node-id=1-2&node-type=frame&t=uvXqImCetMNbu9F3-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2)*
 
 ## Como Executar o Projeto
