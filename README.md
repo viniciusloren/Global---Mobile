@@ -1,5 +1,9 @@
 # Projeto Mobile - Aplicativo de Gestão de Consumo de Energia
 
+# Vincius Lorenzetti - RM 553121
+# João Pedro Fontana - RM 553343
+# Marcelo Mendes Galli - RM 553654
+
 ## Descrição do Projeto
 
 Este projeto é um aplicativo mobile desenvolvido no Android Studio com o objetivo de facilitar a gestão do consumo de energia pelos usuários. Ele permite ao usuário visualizar notificações, acessar faturas, realizar pagamentos, conferir relatórios de consumo e gerenciar sua conta de maneira simples e intuitiva.
