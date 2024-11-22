@@ -1,8 +1,8 @@
 # Projeto Mobile - Aplicativo de Gestão de Consumo de Energia
 
-# Vincius Lorenzetti - RM 553121
-# João Pedro Fontana - RM 553343
-# Marcelo Mendes Galli - RM 553654
+## Vincius Lorenzetti - RM 553121
+## João Pedro Fontana - RM 553343
+## Marcelo Mendes Galli - RM 553654
 
 ## Descrição do Projeto
 
